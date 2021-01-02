@@ -31,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -127,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "typing"
+  "defaultProject": "typing",
+  "cli": {
+    "analytics": "13d4212c-6795-43a5-ba2f-3222c4c6d6bf"
+  }
 }

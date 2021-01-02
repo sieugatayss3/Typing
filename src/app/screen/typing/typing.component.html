@@ -1,0 +1,22 @@
+<div class="main">
+  <div class="lines break-line">
+    <div class="word" *ngFor="let word of arrayText">
+      <div
+        #letter
+        class="letter"
+        [attr.data-value]="letter"
+        *ngFor="let letter of word"
+      >
+        {{ checkLineLetter(letter) ? letter : "⏎" }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<input
+  #input
+  autofocus
+  class="input-hidden"
+  (blur)="onBlur($event)"
+  (keyup)="onKeyUp($event)"
+/>
